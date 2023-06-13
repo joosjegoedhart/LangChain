@@ -1,0 +1,17 @@
+************* Module main
+src/main.py:80: [C0304(missing-final-newline), ] Final newline missing
+src/main.py:1: [C0114(missing-module-docstring), ] Missing module docstring
+src/main.py:2: [E0401(import-error), ] Unable to import 'langchain'
+src/main.py:3: [E0401(import-error), ] Unable to import 'langchain.embeddings'
+src/main.py:4: [E0401(import-error), ] Unable to import 'langchain.chains'
+src/main.py:5: [E0401(import-error), ] Unable to import 'langchain.document_loaders'
+src/main.py:6: [E0401(import-error), ] Unable to import 'langchain.vectorstores'
+src/main.py:7: [E0401(import-error), ] Unable to import 'langchain.agents'
+src/main.py:13: [C0103(invalid-name), ] Constant name "prompt" doesn't conform to UPPER_CASE naming style
+src/main.py:19: [C0103(invalid-name), ] Constant name "text" doesn't conform to UPPER_CASE naming style
+src/main.py:24: [C0103(invalid-name), ] Constant name "template" doesn't conform to UPPER_CASE naming style
+src/main.py:63: [C0103(invalid-name), ] Constant name "query" doesn't conform to UPPER_CASE naming style
+
+------------------------------------------------------------------
+Your code has been rated at 1.63/10 (previous run: 0.93/10, +0.70)
+

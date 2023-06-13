@@ -31,7 +31,7 @@ output = prompt.format(product="socks")
 print(prompt.format(product = "socks"))
 
 # Chains: LLMs with prompt templates
-chain = LLMChain(llm = llm, 
+chain = LLMChain(llm = llm,
                  prompt = prompt)
 output = chain.run("colorful things")
 print(output)
@@ -47,9 +47,10 @@ overall_chain = SimpleSequentialChain(chains=[chain, chain_two], verbose=True)
 catchprase = overall_chain.run("colorful things")
 
 # Chains: indexing, i.e. external data
-loader = YoutubeLoader.from_youtube_url("https://www.youtube.com/watch?v=dQw4w9WgXcQ") # Rick Astley Never gonna give you up
+# Create Faiss vector database for documents using Huggingface model for embeddings
+loader = YoutubeLoader.from_youtube_url("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
 documents = loader.load()
-db = FAISS.from_documents(documents, embeddings) # create vector database Faiss using Huggingface embeddings
+db = FAISS.from_documents(documents, embeddings)
 
 retriever = db.as_retriever()
 qa = RetrievalQA.from_chain_type(
