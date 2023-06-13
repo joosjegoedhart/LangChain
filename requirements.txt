@@ -1,1 +1,7 @@
 langchain==0.0.147
+huggingface_hub
+sentence_transformers
+youtube-transcript-api
+pytube
+faiss-cpu
+wikipedia

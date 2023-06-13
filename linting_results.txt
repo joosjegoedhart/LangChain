@@ -1,0 +1,9 @@
+************* Module main
+src/main.py:4: [C0304(missing-final-newline), ] Final newline missing
+src/main.py:1: [C0114(missing-module-docstring), ] Missing module docstring
+src/main.py:2: [E0401(import-error), ] Unable to import 'langchain'
+src/main.py:2: [W0611(unused-import), ] Unused HuggingFaceHub imported from langchain
+
+------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
+
